@@ -1,0 +1,19 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th >#</th>
+        <th >id</th>
+        <th >nom</th>
+        <th >telephone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let client of listeCLient;let i = index">
+        <th >{{i+1}}</th>
+        <td>{{client.id}}</td>
+        <td>{{client.nom}}</td>
+        <td>{{client.telephone}}</td>
+      </tr>
+     
+    </tbody>
+  </table>
